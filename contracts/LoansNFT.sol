@@ -92,7 +92,7 @@ contract LoansNFT is IERC721Receiver, Pausable {
         loanRequest.tokenIdNFT = tokenIdNFT;
         loanRequest.loanAmount = loanAmount;
         loanRequest.interestAmount = interestAmount;
-        loanRequest.singlePeriodTime = singlePeriodTime;
+        loanRequest.singlePeriodTime = singlePeriodTime * 1 days;
         loanRequest.maximumInterestPeriods = maximumInterestPeriods;
         loanRequest.status = Status.PENDING;
         totalLoanRequests = SafeMath.add(totalLoanRequests, 1);
@@ -158,6 +158,7 @@ contract LoansNFT is IERC721Receiver, Pausable {
         // NFT is sent to the function caller (the lender or borrower).
         IERC721 currentNFT = IERC721(allLoanRequests[loanID].smartContractAddressOfNFT);
         currentNFT.approve(msg.sender, allLoanRequests[loanID].tokenIdNFT);
+        // currentNFT.TransferFrom(msg.sender, address(this), tokenIdNFT)
         currentNFT.transferFrom(address(this), msg.sender, allLoanRequests[loanID].tokenIdNFT);
         emit LoansUpdated();
     }
