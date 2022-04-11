@@ -1,15 +1,14 @@
 ## CFY.FINANCE
 
-NFT-Collateralised Loans on Polygon
+NFT-Collateralised Loans on Harmony
 
 ![alt text](https://raw.githubusercontent.com/Aranyani01/CFY/main/public/logo512.png)
 
-Beta is now Live on Matic Mainnet! Contract Addresses:
+Beta is now Live on Harmony Testnet! Contract Address:
 
-- LeaseNFT.sol : 0xbe7Ba64cCAab7a4aaB4D32e4070Bf85D057D2B5c
-- LoanNFT.sol : 0x48CddE6c5af7D19BF1A436159b54AD42d753141C
+- LoanNFT.sol : 0x0552b28448041f533ff4a739228be829ae206c9e
 
-## Webapp (Frontend) live on: http://cfy.finance:3000
+## Webapp (Frontend) live on: https://staging-cfy.netlify.app/
 
 *Summary:*
 
@@ -26,28 +25,7 @@ LoanNFT.sol allows you to:
 
 In this way, we allow a peer to peer, trustless liquidity protocol where investors can gain interest on their funds while their principal is secured by valuable NFTs. Meanwhile, NFT hodlers can access liquidity as needed without having to sell/risk their precious NFTs. The scalability of the Harmony chain makes it ideal for running complicated smart contracts like CFY.finance cheaply. CFY FINANCE is also the first trustless NFT application, and first NFT-collateralised loan dApp on Harmony. We hope to provide the DeFi infrastructre for NFTs to grow and thrive on the Harmony Chain.
 
-Video Walkthrough: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Video Walkthrough: https://www.youtube.com/watch?v=PWqHOMDFOtk
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
